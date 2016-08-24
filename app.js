@@ -1,5 +1,3 @@
-// Code goes here
-
 angular.module('flexApp', ['ngMaterial'])
 
     .run(function() {
@@ -9,7 +7,7 @@ angular.module('flexApp', ['ngMaterial'])
     .controller('MainCtrl', function($scope, $timeout) {
         console.log('MainCtrl');
 
-        var timeline = new TimelineLite();
+        var timeline = new TimelineMax();
 
             timeline.stop();
 
@@ -22,7 +20,6 @@ angular.module('flexApp', ['ngMaterial'])
                 left: '0',
                 ease: Power3.easeOut
             }, 0);
-
 
             timeline.to('#top-div', 0.8, {
                 height: '100px',
@@ -48,8 +45,6 @@ angular.module('flexApp', ['ngMaterial'])
                 height: '2px',
                 ease: Power2.easeInOut
             }, 1);
-
-
 
             $timeout(function() {
                 timeline.play();
