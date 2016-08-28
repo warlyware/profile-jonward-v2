@@ -1,0 +1,2 @@
+angular
+    .module('jonWardApp', ['ngMaterial']);
