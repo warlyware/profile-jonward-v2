@@ -50,6 +50,10 @@
                 ease: Power2.easeInOut
             }, 1);
 
+            timeline.to('#enter-button', 0.3, {
+                opacity: 1
+            }, 1.3);
+
             $timeout(function() {
                 timeline.play();
             }, 1000);

@@ -1,10 +1,12 @@
+@import 'colors';
+
 html, body {
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: darkgray;
-    overflow-x: none;
+    background-color: $gray;
+    overflow-x: hidden;
 }
 
 .full-height {
@@ -13,8 +15,14 @@ html, body {
 
 .p-fixed {
     position: fixed;
-    top: 0;
-    left: 0;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute !important;
 }
 
 #main-container {
@@ -24,32 +32,18 @@ html, body {
 }
 
 #top-div {
-    background-color: darkgray;
+    background-color: $gray;
     height: 50vh;
 }
 
 #mid-div {
     flex: 1;
-    background-color: darkgray;
+    background-color: $gray;
     min-height: 2px;
     height: calc(100% - 200px);
 }
 
 #bottom-div {
-    background-color: darkgray;
+    background-color: $gray;
     height: 50vh;
-}
-
-#red {
-    background-color: maroon;
-    left: -100vw;
-    position: relative;
-    height: calc(100% - 200px);
-}
-
-#blue {
-    background-color: darkblue;
-    left: 100vw;
-    position: relative;
-    height: calc(100% - 200px);
 }

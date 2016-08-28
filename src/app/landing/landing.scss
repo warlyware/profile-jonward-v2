@@ -1,0 +1,30 @@
+@import 'colors';
+
+#enter-button {
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    height: 36px;
+    width: 76px;
+    opacity: 0;
+
+    margin: -18px 0 0 -44px;
+    span {
+        color: $beige;
+        font-size: 20px;
+    }
+}
+
+#red {
+    background-color: $maroon;
+    left: -100vw;
+    position: relative;
+    height: calc(100% - 200px);
+}
+
+#blue {
+    background-color: $dark-blue;
+    left: 100vw;
+    position: relative;
+    height: calc(100% - 200px);
+}
