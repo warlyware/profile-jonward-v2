@@ -1,2 +1,2 @@
 angular
-    .module('jonWardApp', ['ngMaterial']);
+    .module('jonWardApp', ['ngMaterial', 'ui.router']);
