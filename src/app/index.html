@@ -1,29 +1,44 @@
 
 <html lang="en" ng-app="jonWardApp">
 
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-  <body ng-controller="ApplicationController as appCtrl">
+    <body ng-controller="ApplicationController as appCtrl">
 
-    <div id="main-container" ui-view></div>
+        <div id="top-div">
+            <div class="layout-row full-height">
+                <div class="layout-column layout-align-end-end md-headline layout-fill md-padding beige">
+                    <div>j o n a t h a n</div>
+                    <div>w a r d</div>
+                </div>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="application.module.js"></script>
-    <script src="application.config.js"></script>
-    <script src="application.controller.js"></script>
-    <script src="/landing/landing.controller.js"></script>
-  </body>
+        <md-button id="enter-button" class="p-absolute" ng-click="toggleSlide()">enter</md-button>
+
+        <div id="main-container" class="mid-div layout-column p-relative" ui-view></div>
+
+        <div id="bottom-div">
+            <div class="layout-row bottom-row full-height"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+        <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="application.module.js"></script>
+        <script src="application.config.js"></script>
+        <script src="application.controller.js"></script>
+        <script src="/landing/landing.controller.js"></script>
+    </body>
 
 </html>
