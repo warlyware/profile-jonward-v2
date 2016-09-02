@@ -40,24 +40,38 @@ html, body {
 #main-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 #top-div {
     background-color: $gray;
     height: 50vh;
+    &.post-landing {
+        height:150px;
+    }
 }
 
 #mid-div {
     flex: 1;
     background-color: $gray;
     min-height: 2px;
-    height: calc(100% - 200px);
+    height: calc(100% - 300px);
+}
+
+.mid-row {
+    height: calc(100% - 300px);
 }
 
 #bottom-div {
     background-color: $gray;
     height: 50vh;
+}
+
+#bottom-div {
+    background-color: $gray;
+    height: 50vh;
+    &.post-landing {
+        height:150px;
+    }
 }
 
 .nav-wrapper {
@@ -66,4 +80,8 @@ html, body {
 
 nav {
     margin-right: -22px;
+}
+
+.maroon {
+    background-color: $maroon;
 }

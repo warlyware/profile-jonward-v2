@@ -4,9 +4,13 @@ angular
     .module('jonWardApp')
     .controller('ApplicationController', ApplicationController);
 
-    function ApplicationController($scope, $timeout) {
-        console.log('ApplicationController');
+    ApplicationController.$inject = ['$state']
 
+    function ApplicationController($state) {
+        var vm = this;
+
+        vm.$state = $state;
+        console.log($state);
     };
 
 })();
