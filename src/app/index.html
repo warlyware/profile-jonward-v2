@@ -11,11 +11,20 @@
     <body ng-controller="ApplicationController as appCtrl">
 
         <div id="top-div">
-            <div class="layout-row full-height">
-                <div class="layout-column layout-align-end-end md-headline layout-fill md-padding beige">
-                    <div>j o n a t h a n</div>
-                    <div>w a r d</div>
+            <div class="layout-column full-height nav-wrapper">
+                <div id="jon-name" class="layout-column layout-align-center-end md-headline flex-70
+                beige">
+                    <div ng-cloak ng-bind="'j o n a t h a n'"></div>
+                    <div ng-cloak ng-bind="'w a r d'"></div>
                 </div>
+                <div class="flex-10"></div>
+                <nav id="top-nav" class="layout-row layout-align-end-end flex-20 beige md-padding">
+                    <button ng-cloak ng-bind="'bio'" class="md-button cursor-pointer flex-10 nav-button text-align-center"></button>
+                    <button ng-cloak ng-bind="'thing'" class="md-button cursor-pointer flex-10 nav-button text-align-center"></button>
+                    <button ng-cloak ng-bind="'audio'" class="md-button cursor-pointer flex-10 nav-button text-align-center"></button>
+                    <button ng-cloak ng-bind="'etcet'" class="md-button cursor-pointer flex-10 nav-button text-align-center"></button>
+                    <button ng-cloak ng-bind="'contact'" class="md-button cursor-pointer flex-10 nav-button text-align-center"></button>
+                </nav>
             </div>
         </div>
 

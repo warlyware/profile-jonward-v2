@@ -13,6 +13,18 @@ html, body {
     height: 100%;
 }
 
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .p-fixed {
     position: fixed;
 }
@@ -46,4 +58,12 @@ html, body {
 #bottom-div {
     background-color: $gray;
     height: 50vh;
+}
+
+.nav-wrapper {
+    padding-right: 20px;
+}
+
+nav {
+    margin-right: -22px;
 }
