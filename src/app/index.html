@@ -34,7 +34,7 @@
         </div>
 
         <span ng-show="appCtrl.$state.current.name === 'landing'">
-            <md-button id="enter-button" class="p-absolute" ng-click="toggleSlide()">enter</md-button>
+            <md-button id="enter-button" class="p-absolute" ng-click="toggleSlide()" ui-sref="home">enter</md-button>
         </span>
 
         <div id="main-container" class="mid-div layout-column p-relative" ui-view></div>

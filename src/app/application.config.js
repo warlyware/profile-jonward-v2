@@ -24,6 +24,12 @@
                     controller: 'LandingController',
                     controllerAS: 'landingCtrl'
                 })
+                .state('home', {
+                    url: '/home',
+                    templateUrl: '/home/home.tpl.html',
+                    controller: 'HomeController',
+                    controllerAS: 'homeCtrl'
+                })
                 .state('bio', {
                     url: '/bio',
                     templateUrl: '/bio/bio.tpl.html',
