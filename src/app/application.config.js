@@ -53,6 +53,18 @@
                     templateUrl: '/bands/bands.tpl.html',
                     controller: 'BandsController',
                     controllerAs: 'bandsCtrl'
+                })
+                .state('contact', {
+                    url: '/contact',
+                    templateUrl: '/contact/contact.tpl.html',
+                    controller: 'ContactController',
+                    controllerAs: 'contactCtrl'
+                })
+                .state('media', {
+                    url: '/media',
+                    templateUrl: '/media/media.tpl.html',
+                    controller: 'MediaController',
+                    controllerAs: 'mediaCtrl'
                 });
         }
 
