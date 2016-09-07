@@ -36,6 +36,12 @@
                     controller: 'BioController',
                     controllerAs: 'bioCtrl'
                 })
+                .state('composition', {
+                    url: '/composition',
+                    templateUrl: '/composition/composition.tpl.html',
+                    controller: 'CompositionController',
+                    controllerAs: 'compositionCtrl'
+                })
                 .state('bands', {
                     url: '/bands',
                     templateUrl: '/bands/bands.tpl.html',
