@@ -42,6 +42,12 @@
                     controller: 'CompositionController',
                     controllerAs: 'compositionCtrl'
                 })
+                .state('audio', {
+                    url: '/audio',
+                    templateUrl: '/audio/audio.tpl.html',
+                    controller: 'AudioController',
+                    controllerAs: 'audioCtrl'
+                })
                 .state('bands', {
                     url: '/bands',
                     templateUrl: '/bands/bands.tpl.html',
