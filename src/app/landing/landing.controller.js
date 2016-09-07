@@ -60,13 +60,13 @@
                 y: -460
             }, 1.25);
 
-            timeline.add('stagger', 1.2);
+            // timeline.add('stagger', 1.2);
 
-            timeline.staggerFrom(".nav-button", 0.8, {
-                opacity:0,
-                y:20,
-                ease:Back.easeIn
-            }, 0.2, 'stagger');
+            // timeline.staggerFrom(".nav-button", 0.8, {
+            //     opacity:0,
+            //     y:20,
+            //     ease:Back.easeIn
+            // }, 0.2, 'stagger');
 
 
             $timeout(function() {

@@ -1,17 +1,24 @@
 @import 'colors';
 
+$top-div-height: 60px;
+$bottom-div-height: 60px;
+
 html, body {
     font-family: 'Biryani', sans-serif;
     padding: 0;
     margin: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: $gray;
     overflow: hidden;
 }
 
 .full-height {
     height: 100%;
+}
+
+.full-width {
+    width: 100%;
 }
 
 .text-align-right {
@@ -47,7 +54,7 @@ html, body {
     background-color: $gray;
     height: 50vh;
     &.post-landing {
-        height:150px;
+        height: $top-div-height;
     }
 }
 
@@ -56,10 +63,13 @@ html, body {
     background-color: $gray;
     min-height: 2px;
     height: calc(100% - 300px);
+    &.post-landing {
+        height: calc(100% - 60px - 60px);
+    }
 }
 
 .mid-row {
-    height: calc(100% - 300px);
+    height: calc(100% - 60px - 60px);
 }
 
 #bottom-div {
@@ -71,7 +81,7 @@ html, body {
     background-color: $gray;
     height: 50vh;
     &.post-landing {
-        height:150px;
+        height: $bottom-div-height;
     }
 }
 
@@ -91,4 +101,13 @@ nav {
     font-weight: 200;
     letter-spacing: 0.3em;
     color: $beige;
+    padding-right: 20px;
+}
+
+.md-margin-top {
+    margin-top: 16px;
+}
+
+.md-margin-right {
+    margin-right: 16px;
 }

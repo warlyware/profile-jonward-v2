@@ -22,19 +22,25 @@
                     url: '/',
                     templateUrl: '/landing/landing.tpl.html',
                     controller: 'LandingController',
-                    controllerAS: 'landingCtrl'
+                    controllerAs: 'landingCtrl'
                 })
                 .state('home', {
                     url: '/home',
                     templateUrl: '/home/home.tpl.html',
                     controller: 'HomeController',
-                    controllerAS: 'homeCtrl'
+                    controllerAs: 'homeCtrl'
                 })
                 .state('bio', {
                     url: '/bio',
                     templateUrl: '/bio/bio.tpl.html',
                     controller: 'BioController',
-                    controllerAS: 'bioCtrl'
+                    controllerAs: 'bioCtrl'
+                })
+                .state('bands', {
+                    url: '/bands',
+                    templateUrl: '/bands/bands.tpl.html',
+                    controller: 'BandsController',
+                    controllerAs: 'bandsCtrl'
                 });
         }
 

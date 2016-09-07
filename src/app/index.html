@@ -12,22 +12,25 @@
     <body ng-controller="ApplicationController as appCtrl">
 
         <div id="top-div" ng-class="{'post-landing': !$state.is('landing')}">
-            <div class="layout-column full-height nav-wrapper">
-                <div id="jon-name" class="layout-column layout-align-center-end md-headline flex-70
-                beige">
+            <div class="layout-column md-margin-top"
+            ng-class="{'layout-fill layout-align-end-center': !$state.is('landing')}">
+                <div id="jon-name" class="layout-column layout-align-center-end md-headline flex-70 beige"
+                ng-if="$state.is('landing')">
                     <div class="md-diplay-3" ng-cloak ng-bind="'j o n a t h a n'"></div>
                     <div class="md-diplay-3" ng-cloak ng-bind="'w a r d'"></div>
                 </div>
-                <div class="flex-10"></div>
-                <nav id="top-nav" class="layout-row layout-align-end-end flex-20 beige">
+                <div class="flex-10" ng-if="$state.is('landing')"></div>
+                <nav id="top-nav" class="layout-row layout-fill layout-align-center-center beige">
                     <md-button ng-cloak ng-bind="'bio'" class="md-button cursor-pointer flex-10 nav-button text-align-center"
                     ui-sref="bio"></md-button>
-                    <md-button ng-cloak ng-bind="'thing'" class="md-button cursor-pointer flex-10 nav-button text-align-center"
-                    ui-sref="thing"></md-button>
+                    <md-button ng-cloak ng-bind="'bands'" class="md-button cursor-pointer flex-10 nav-button text-align-center"
+                    ui-sref="bands"></md-button>
+                    <md-button ng-cloak ng-bind="'comp'" class="md-button cursor-pointer flex-10 nav-button text-align-center"
+                    ui-sref="comp"></md-button>
                     <md-button ng-cloak ng-bind="'audio'" class="md-button cursor-pointer flex-10 nav-button text-align-center"
                     ui-sref="audio"></md-button>
-                    <md-button ng-cloak ng-bind="'etcet'" class="md-button cursor-pointer flex-10 nav-button text-align-center"
-                    ui-sref="etc"></md-button>
+                    <md-button ng-cloak ng-bind="'media'" class="md-button cursor-pointer flex-10 nav-button text-align-center"
+                    ui-sref="media"></md-button>
                     <md-button ng-cloak ng-bind="'contact'" class="md-button cursor-pointer flex-10 nav-button text-align-center"
                     ui-sref="contact"></md-button>
                 </nav>
@@ -38,9 +41,10 @@
             <md-button id="enter-button" class="p-absolute" ng-click="toggleSlide()" ui-sref="home">enter</md-button>
         </span>
 
-        <div id="main-container" class="mid-div layout-column p-relative" ui-view></div>
+        <div id="main-container" class="mid-div layout-column p-relative" ui-view
+        ng-class="{'post-landing': !$state.is('landing')}"></div>
 
-        <div id="bottom-div">
+        <div id="bottom-div" ng-class="{'post-landing': !$state.is('landing')}">
             <div class="layout-row bottom-row full-height"></div>
         </div>
 
@@ -55,8 +59,10 @@
         <script src="application.module.js"></script>
         <script src="application.config.js"></script>
         <script src="application.controller.js"></script>
+        <script src="/home/home.controller.js"></script>
         <script src="/landing/landing.controller.js"></script>
         <script src="/bio/bio.controller.js"></script>
+        <script src="/bands/bands.controller.js"></script>
     </body>
 
 </html>
