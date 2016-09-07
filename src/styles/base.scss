@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'material-icons';
 
 $top-div-height: 60px;
 $bottom-div-height: 60px;
@@ -11,6 +12,13 @@ html, body {
     width: 100vw;
     background-color: $gray;
     overflow: hidden;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+      object-fit: contain;
+
 }
 
 .full-height {
@@ -110,4 +118,9 @@ nav {
 
 .md-margin-right {
     margin-right: 16px;
+}
+
+.home-button {
+    top: 30px;
+    left: 30px;
 }
