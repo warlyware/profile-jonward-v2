@@ -56,25 +56,22 @@ img {
 #main-container {
     display: flex;
     flex-direction: column;
-    max-height: calc(100% - 60px - 60px);
+    height: calc(100% - 60px - 60px);
 }
 
 #top-div {
     background-color: $gray;
-    height: 50vh;
-    &.post-landing {
-        height: $top-div-height;
-    }
+    height: $top-div-height;
+    // &.post-landing {
+    //     height: $top-div-height;
+    // }
 }
 
 #mid-div {
     flex: 1;
     background-color: $gray;
     min-height: 2px;
-    height: calc(100% - 300px);
-    &.post-landing {
-        height: calc(100% - 60px - 60px);
-    }
+    height: calc(100% - 60px - 60px);
 }
 
 .no-overflow {
@@ -87,7 +84,7 @@ img {
 
 #bottom-div {
     background-color: $gray;
-    height: 50vh;
+    height: $bottom-div-height;
 }
 
 #bottom-div {
