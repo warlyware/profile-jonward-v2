@@ -6,6 +6,9 @@
                 "./src/app/**/*.html",
                 "./src/app/**/**/*.html"
             ],
+            "images": [
+                "./src/img/*.*"
+            ],
             "js": [
                 "./src/app/*.js",
                 "./src/app/**/*.js",
