@@ -9,8 +9,22 @@
         max-height: 350px;
     }
 
+    .bands-img-sm {
+        max-height: 270px;
+        max-width: 270px;
+    }
+
     .bands-padding {
         padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bands-spacer {
+        min-height: 40px;
+    }
+
+    .bands-bottom-padding {
+        min-height: 20px;
     }
 
 }
