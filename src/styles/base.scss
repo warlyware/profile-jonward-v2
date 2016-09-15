@@ -3,6 +3,8 @@
 
 $top-div-height: 60px;
 $bottom-div-height: 60px;
+$top-div-xs-height: 30px;
+$bottom-div-xs-height: 30px;
 
 html, body {
     font-family: 'Biryani', sans-serif;
@@ -57,14 +59,20 @@ img {
     display: flex;
     flex-direction: column;
     height: calc(100% - 60px - 60px);
+    &.xs {
+        height: calc(100% - 30px - 30px);
+    }
 }
+
 
 #top-div {
     background-color: $gray;
     height: $top-div-height;
-    // &.post-landing {
-    //     height: $top-div-height;
-    // }
+}
+
+#top-div-xs {
+    background-color: $gray;
+    height: $top-div-xs-height;
 }
 
 #mid-div {
@@ -93,6 +101,12 @@ img {
     &.post-landing {
         height: $bottom-div-height;
     }
+}
+
+
+#bottom-div-xs {
+    background-color: $gray;
+    height: $bottom-div-xs-height;
 }
 
 .nav-wrapper {

@@ -7,10 +7,11 @@
         .config(config)
         .run(run);
 
-        run.$inject = ['$rootScope', '$state'];
+        run.$inject = ['$rootScope', '$state', '$mdMedia'];
 
-        function run($rootScope, $state) {
+        function run($rootScope, $state, $mdMedia) {
             $rootScope.$state = $state;
+            $rootScope.$mdMedia = $mdMedia;
         }
 
         config.$inject = ['$stateProvider'];

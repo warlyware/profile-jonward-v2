@@ -19,7 +19,9 @@
             </a>
         </div>
 
-        <div id="top-div">
+        <div id="top-div-xs" class="show-xs hide-gt-xs"></div>
+
+        <div id="top-div" class="hide-xs">
             <div class="layout-column md-margin-top"
             ng-class="{'layout-fill layout-align-end-center': !$state.is('landing')}">
                 <div id="jon-name" class="layout-column layout-align-center-end md-headline flex-70 beige"
@@ -49,9 +51,13 @@
             <md-button id="enter-button" class="p-absolute" ng-click="toggleSlide()" ui-sref="home">enter</md-button>
         </span>
 
-        <div id="main-container" class="mid-div layout-column layout-align-center-center maroon p-relative" ui-view></div>
+        <div id="main-container" class="layout-column layout-align-center-center maroon p-relative"
+        ng-class="{'xs': $mdMedia('xs')}"
+        ui-view></div>
 
-        <div id="bottom-div">
+        <div id="bottom-div-xs" class="show-xs hide-gt-xs"></div>
+
+        <div id="bottom-div" class="hide-xs">
             <div class="layout-row bottom-row full-height"></div>
         </div>
 
