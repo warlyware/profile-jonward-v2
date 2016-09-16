@@ -19,7 +19,14 @@
             </a>
         </div>
 
-        <div id="top-div-xs" class="show-xs hide-gt-xs"></div>
+        <div id="top-div-xs" class="show-xs hide-gt-xs">
+            <md-button class="md-icon-button" aria-label="menu">
+                <md-icon class="matermd-iconal-icons beige cursor-pointer" ng-click="appCtrl.openSideNav()">menu</md-icon>
+            </md-button>
+        </div>
+        <md-sidenav md-component-id="left" class="md-sidenav-left">
+            Left Nav!
+        </md-sidenav>
 
         <div id="top-div" class="hide-xs">
             <div class="layout-column md-margin-top"

@@ -4,13 +4,18 @@ angular
     .module('jonWardApp')
     .controller('ApplicationController', ApplicationController);
 
-    ApplicationController.$inject = ['$state']
+    ApplicationController.$inject = ['$state', '$mdSidenav']
 
-    function ApplicationController($state) {
+    function ApplicationController($state, $mdSidenav) {
         var vm = this;
 
         vm.$state = $state;
         console.log($state);
+
+        vm.openSideNav = function() {
+            $mdSidenav('left').toggle();
+        };
+
     };
 
 })();
