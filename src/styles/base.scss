@@ -4,7 +4,7 @@
 $top-div-height: 60px;
 $bottom-div-height: 60px;
 $top-div-xs-height: 38px;
-$bottom-div-xs-height: 38px;
+$bottom-div-xs-height: 54px;
 
 html, body {
     font-family: 'Biryani', sans-serif;
@@ -19,8 +19,7 @@ html, body {
 img {
     max-height: 100%;
     max-width: 100%;
-      object-fit: contain;
-
+    object-fit: contain;
 }
 
 .full-height {
@@ -60,7 +59,7 @@ img {
     flex-direction: column;
     height: calc(100% - 60px - 60px);
     &.xs {
-        height: calc(100% - 30px - 30px);
+        height: calc(100% - 30px - 54px);
     }
 }
 
@@ -148,6 +147,10 @@ nav {
 
 .md-padding {
     padding: 16px;
+}
+
+.md-padding-half {
+    padding: 8px;
 }
 
 .md-padding-top {

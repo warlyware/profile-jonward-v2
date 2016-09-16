@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Biryani:200' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href=".//to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="./node_modules/angular-material/angular-material.min.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
@@ -21,11 +22,13 @@
 
         <div id="top-div-xs" class="show-xs hide-gt-xs">
             <md-button class="md-icon-button" aria-label="menu">
-                <md-icon class="matermd-iconal-icons beige cursor-pointer" ng-click="appCtrl.openSideNav()">menu</md-icon>
+                <md-icon class="matermd-iconal-icons beige cursor-pointer" ng-click="appCtrl.toggleSideNav()">menu</md-icon>
             </md-button>
         </div>
-        <md-sidenav md-component-id="left" class="md-sidenav-left">
-            Left Nav!
+
+        <md-sidenav md-component-id="side-nav"
+        class="md-sidenav-left layout-column layout-fill beige dark-blue-bg layout-align-center">
+            <md-button class="full-width" ng-click="appCtrl.toggleSideNav('side-nav');">Bands</md-button>
         </md-sidenav>
 
         <div id="top-div" class="hide-xs">
@@ -62,12 +65,16 @@
         ng-class="{'xs': $mdMedia('xs')}"
         ui-view></div>
 
-        <div id="bottom-div-xs" class="show-xs hide-gt-xs"></div>
+        <div id="bottom-div-xs" class="show-xs hide-gt-xs layout-row layout-align-center-start beige">
+            <i class="fa fa-soundcloud fa-2x md-padding-half" aria-hidden="true"></i>
+            <i class="fa fa-linkedin fa-2x md-padding-half md-padding-left" aria-hidden="true"></i>
+            <i class="fa fa-comment-o fa-2x md-padding-half md-padding-left" aria-hidden="true"></i>
+        </div>
 
         <div id="bottom-div" class="hide-xs">
             <div class="layout-row bottom-row full-height"></div>
         </div>
-
+        <script src="https://use.fontawesome.com/79e9127d22.js"></script>
         <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
         <script src="./node_modules/angular/angular.min.js"></script>

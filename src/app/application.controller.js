@@ -12,8 +12,8 @@ angular
         vm.$state = $state;
         console.log($state);
 
-        vm.openSideNav = function() {
-            $mdSidenav('left').toggle();
+        vm.toggleSideNav = function() {
+            $mdSidenav('side-nav').toggle();
         };
 
     };
