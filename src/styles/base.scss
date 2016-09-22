@@ -22,6 +22,11 @@ img {
     object-fit: contain;
 }
 
+a {
+    color: $beige;
+    text-decoration: none;
+}
+
 .full-height {
     height: 100%;
 }
@@ -32,6 +37,10 @@ img {
 
 .text-align-right {
     text-align: right;
+}
+
+.z-index-1 {
+    z-index: 1;
 }
 
 .text-align-center {
@@ -55,11 +64,9 @@ img {
 }
 
 #main-container {
-    display: flex;
-    flex-direction: column;
     height: calc(100% - 60px - 60px);
     &.xs {
-        height: calc(100% - 30px - 54px);
+        height: calc(100% - 38px - 54px);
     }
 }
 
@@ -155,6 +162,10 @@ nav {
 
 .md-padding-top {
     padding-top: 16px;
+}
+
+.md-padding-top-half {
+    padding-top: 8px;
 }
 
 .md-padding-bottom {
