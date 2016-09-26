@@ -81,13 +81,6 @@ a {
     height: $top-div-xs-height;
 }
 
-#mid-div {
-    flex: 1;
-    background-color: $gray;
-    min-height: 2px;
-    height: calc(100% - 60px - 60px);
-}
-
 .no-overflow {
     overflow: hidden;
 }
