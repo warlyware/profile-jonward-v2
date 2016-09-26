@@ -1,7 +1,7 @@
 #bands {
 
     .bands-paragraph {
-        background-color: rgba( 0, 0, 0, 0.5);
+
         &.bands-paragraph-sm {
             // max-width: 350px;
         }
@@ -23,6 +23,13 @@
 
     .bands-bottom-padding {
         min-height: 20px;
+    }
+
+    .dr-sci-paragraph {
+        &.dr-sci-paragraph-sm {
+            background-color: rgba( 0, 0, 0, 0.5);
+            height: 120px;
+        }
     }
 
 }

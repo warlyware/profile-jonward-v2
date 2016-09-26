@@ -25,15 +25,7 @@
             </md-button>
         </div>
 
-        <md-sidenav md-component-id="side-nav"
-        class="md-sidenav-left layout-column layout-fill beige dark-blue-bg layout-align-center">
-            <md-button class="full-width" ng-click="appCtrl.toggleSideNav('side-nav');">
-                <a href="" ui-sref="bio">Bio</a>
-            </md-button>
-            <md-button class="full-width" ng-click="appCtrl.toggleSideNav('side-nav');">
-                <a href="" ui-sref="bands">Bands</a>
-            </md-button>
-        </md-sidenav>
+        <div ng-include="'./nav/nav.tpl.html'"></div>
 
         <div id="top-div" class="hide-xs">
             <div class="layout-column md-margin-top"
