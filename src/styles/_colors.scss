@@ -7,12 +7,20 @@ $beige: #F2EFDB;
 $maroon: #83002B;
 $black: #000;
 
+.black {
+    color: black;
+}
+
 .off-white {
     color: $off-white;
 }
 
 .beige {
     color: $beige;
+}
+
+.beige-bg {
+    background-color: $beige;
 }
 
 .maroon {
