@@ -1,9 +1,11 @@
 $off-white: #f0f0f0;
 $gray: #404040;
+$dark-gray: #292929;
 $dark-blue: #00495A;
 $light-blue: #007E8D;
 $beige: #F2EFDB;
 $maroon: #83002B;
+$black: #000;
 
 .off-white {
     color: $off-white;
@@ -15,6 +17,10 @@ $maroon: #83002B;
 
 .maroon {
     color: $maroon;
+}
+
+.dark-gray {
+    color: $dark-gray;
 }
 
 .dark-blue {

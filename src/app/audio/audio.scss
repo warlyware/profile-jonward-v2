@@ -1,5 +1,7 @@
-#audio-page-player {
-    height: 200px;
-    width: 600px;
-    background-color: saddlebrown;
+@import 'colors';
+
+#audio-page-player-sm {
+    padding-left: 32px;
+    min-height: 110px;
+    background-color: $dark-gray;
 }
