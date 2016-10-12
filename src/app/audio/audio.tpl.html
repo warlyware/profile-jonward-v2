@@ -10,49 +10,10 @@
             </md-slider-container>
         </div>
     </div>
-    <div id="audio-player-list-sm" class="overflow-scroll md-padding-top-half full-height beige">
-        <div class="audio-track layout-row layout-align-start-center
-        beige-border-top beige-border-bottom playing">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
-        </div>
-        <div class="audio-track layout-row layout-align-start-center beige-border-bottom">
-            <div class="audio-track-title">Song Title!</div>
+    <div id="audio-player-list-sm" class="overflow-scroll full-height beige">
+        <div class="audio-track layout-row layout-align-start-center beige-border-bottom"
+        ng-repeat="track in audioCtrl.tracks">
+            <div class="audio-track-title" ng-bind="::track.title" ng-click="audioCtrl.loadTrack(track.fileName)"></div>
         </div>
     </div>
 </div>
