@@ -1,8 +1,9 @@
 <div class="layout-column mid-row layout-fill maroon">
     <div id="audio-page-player-sm" class="beige-border-bottom layout-row layout-align-start-center full-width">
-        <i class="dark-blue beige-bg material-icons icon-72 icon-circle
-        md-margin-top-half md-margin-bottom-half md-margin-left md-margin-right"
-        ng-click="audioCtrl.playPause()">play_circle_filled</i>
+        <button music-player="play">
+            <i class="dark-blue beige-bg material-icons icon-72 icon-circle
+            md-margin-top-half md-margin-bottom-half md-margin-left md-margin-right">play_circle_filled</i>
+        </button>
         <div class="layout-column layout-fill md-padding-right md-margin-right">
             <div id="song-title" class="beige md-padding-top">Song Title</div>
             <md-slider-container class="full-width">
@@ -13,7 +14,9 @@
     <div id="audio-player-list-sm" class="overflow-scroll full-height beige">
         <div class="audio-track layout-row layout-align-start-center beige-border-bottom"
         ng-repeat="track in audioCtrl.tracks">
-            <div class="audio-track-title" ng-bind="::track.title" ng-click="audioCtrl.loadTrack(track.fileName)"></div>
+            <button music-player="play" add-song="track">{{ track.title }}</button>
+            <button music-player add-song="track">+</button>
+            <!--<div class="audio-track-title" ng-bind="::track.title" ng-click="audioCtrl.loadTrack(track.fileName)"></div>-->
         </div>
     </div>
 </div>

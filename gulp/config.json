@@ -22,9 +22,11 @@
             ],
             "styles_imports": "./src/styles"
         },
-        "node_modules": [
+        "vendor": [
             "./node_modules/**/*.js",
-            "./node_modules/**/*.css"
+            "./node_modules/**/*.css",
+            "./bower_components/**/*.js",
+            "./bower_components/**/*.css"
         ]
     }
 }
